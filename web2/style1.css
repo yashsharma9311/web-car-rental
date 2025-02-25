@@ -1,0 +1,192 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+/* Vehicle Listing Section */
+.vehicles {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.vehicles h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.vehicle-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.vehicle-card {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.vehicle-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.vehicle-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.vehicle-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.vehicle-card:hover {
+    transform: scale(1.05);
+}
+
+/* Vehicle Details Section */
+.vehicle-details {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.vehicle-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.details-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.details-text {
+    width: 60%;
+}
+
+.details-text h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.details-text ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.details-text ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehicle-list {
+        flex-direction: column;
+    }
+}
