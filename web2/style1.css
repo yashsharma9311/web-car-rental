@@ -41,14 +41,14 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero.jpg');
+    /* background-image: url('images/car7.webp'); */
     background-size: cover;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: black;
     padding: 20px;
     animation: fadeIn 2s ease-in-out;
 }
@@ -80,7 +80,7 @@ nav ul li a {
 /* Vehicle Listing Section */
 .vehicles {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: white;
     text-align: center;
 }
 
@@ -103,6 +103,25 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    animation: move 6s infinite;
+}
+
+@keyframes move{
+    0%{
+        border: 3px solid red;
+    } 
+    25%{
+        border: 3px solid rgb(251, 255, 0);
+    } 
+    50%{
+        border: 3px solid rgb(255, 187, 0);
+    } 
+    75%{
+        border: 3px solid rgb(0, 208, 255);
+    }
+    100%{
+        border: 3px solid red;
+    }
 }
 
 .vehicle-card img {
@@ -123,12 +142,13 @@ nav ul li a {
 
 .vehicle-card:hover {
     transform: scale(1.05);
+    /* transform: rotate(10deg); */
 }
 
 /* Vehicle Details Section */
 .vehicle-details {
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: white;
 }
 
 .vehicle-details h2 {
@@ -162,7 +182,7 @@ nav ul li a {
 
 /* Footer */
 footer {
-    background-color: #000;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
@@ -191,4 +211,23 @@ footer {
     }
 }
 
-@media(max-with)
+.showroom {
+    height: 100vh;
+    background: url('images/car4.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.showroom-text {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.showroom-text span {
+    color: yellow;
+    text-shadow: 0 0 10px blue, 0 0 20px blue;
+}
