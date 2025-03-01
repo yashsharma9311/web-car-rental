@@ -241,3 +241,14 @@ footer {
     color: yellow;
     text-shadow: 0 0 10px blue, 0 0 20px blue;
 }
+
+.address ul li i{
+    display: table-cell;
+    width: 20px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.widget ul li i{
+    padding-right: 10px;
+}
