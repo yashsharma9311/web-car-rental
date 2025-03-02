@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-    background-color: #000;
+    background-color: #050505;
     color: white;
     padding: 20px;
     display: flex;
@@ -59,6 +59,44 @@ nav ul li a {
 }
 
 .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+/* our vision */
+.vision {
+    /* background-image: url('images/car7.webp'); */
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.vision h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.vision p {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -199,6 +237,42 @@ footer {
     font-size: 0.9rem;
 }
 
+footer{
+    background-image: url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/27_-_black.jpg");
+}
+
+.Contact{
+   
+   color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+#formfill{
+    display: flex;
+    justify-content: center;
+    
+}
+.form{  
+    /* height: fit-content;
+    width: fit-content; */
+    width: 400px;
+    display: flex;
+    justify-content:center;
+    color: white;
+   background-color: rgb(60, 64, 64);
+   border-radius: 5%;
+
+}
+  
+#bottom{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
 /* Animations */
 @keyframes fadeIn {
     0% {
@@ -252,3 +326,4 @@ footer {
 .widget ul li i{
     padding-right: 10px;
 }
+
