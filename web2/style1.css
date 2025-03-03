@@ -115,6 +115,7 @@ nav ul li a {
     background-color: #005bb5;
 }
 
+
 /* Vehicle Listing Section */
 .vehicles {
     padding: 50px 20px;
@@ -255,10 +256,10 @@ footer{
 .form{  
     /* height: fit-content;
     width: fit-content; */
-    width: 400px;
-    display: flex;
-    justify-content:center;
-    color: white;
+   width: 400px;
+   display: flex;
+   justify-content:center;
+   color: white;
    background-color: rgb(60, 64, 64);
    border-radius: 5%;
 
@@ -327,3 +328,30 @@ footer{
     padding-right: 10px;
 }
 
+/* contact */
+.contact {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
