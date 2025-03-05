@@ -354,3 +354,39 @@ footer{
     cursor: pointer;
     border-radius: 5px;
 }
+
+#check{
+    display: none;
+}
+
+@media(max-width:430px){
+
+    header{
+        justify-content: start;
+    }
+
+header nav ul{
+    display: none;
+}
+
+header .logo h1 {
+    font-size: 1rem;
+}
+
+#bar{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    color: white;
+}
+
+#check:checked~header nav ul{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    background-color: #050505;
+    width: 100%;
+    display: block;
+}
+
+}
