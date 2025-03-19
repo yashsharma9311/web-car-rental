@@ -383,7 +383,7 @@ header .logo h1 {
 #check:checked~header nav ul{
     position: absolute;
     top: 15%;
-    left: 40%;
+    left: 40%; 
     background-color: #050505;
     width: 100%;
     display: block;
